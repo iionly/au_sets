@@ -1,0 +1,71 @@
+== Version History ==
+
+x.x (mm/dd/yyyy):
+
+1.9 (05/10/2014):
+  - updated for Elgg 1.9
+  - German translations added
+  - code cleanup
+
+
+1.8 (03/20/2013):
+  - new plugin setting to allow usage of additional widgets in pinboards
+  - enforces plugin priority with regard to au_widgets
+  - changed tense of search help text to 'you' instead of 'I'
+  - changed pinboard search method from FTS to LIKE for forward compatibility with innodb
+  - fixed invalid limit to results for pinned content in single pin selection modal
+  - fixed poor grammar on single pin widget edit help text
+  - added owner link and time created to single pin widget modal
+  - fixed invalid entity icons for some entities in single pin widget modal
+  - better language strings for comment widget and style options
+  - added help text to layout selection
+  - enables image_slider widget by default
+  - floats pinboard specific widgets to the top of the list
+  - fixes php warning for non-arrays in item search
+
+
+1.7 (03/07/2013):
+  - adds in missing language string
+  - fixes incorrect widget_layout permissions
+  - remove public option from pinboard write access
+  - adds better help text with mode-switch link
+  - can no longer move/edit widgets in view mode (keeping a better contextual difference between view/edit)
+  - smaller widget column headers with better help text
+  - extra padding on widget columns in edit mode
+  - fixes single pin widget modal positioning (used to be able to go off-screen to the left)
+  - no longer overwrites the full widget view
+  - added help text to single-pin widget modal when no content is pinned to a board
+  - allows entities without an entity menu to be unpinned
+
+1.6 (02/25/2013):
+  - Fixes container edit permission for users granted edit permissions
+  - limit deletion to set owners and admins (same as pages plugin behavior)
+  - adds recent boards widget for profile/dashboard/groups
+  - made 'pinboards' lowercase in group side menu to conform with other plugin standards
+  - added additional help text for pinboard search
+  - added additional help text for write permissions
+  - adds link to view pinboard after pinning content
+
+1.5 (02/11/2013):
+ - Fixes hide widget style context issue
+ - Fixes javascript conflict with embed forms
+
+1.4 (02/08/2013):
+ - Fixes additional issues with sets->pinboards conversion (Thanks RvR)
+ - Fixes back compatibility with any sets created prior to conversion
+
+1.3 (02/05/2013):
+ - fixes bug with the context change from sets -> pinboards
+
+1.2 (02/04/2013):
+ - after creating/editing a set the writer is sent to layout mode
+ - adds 'create set' option while pinning - will pin to new set
+ - moves to clickable layout selection instead of dropdown
+ - rebrands 'sets' as 'pinboards'
+ - adds plugin settings to use 'pin' icon for sets, replace bookmarks pin icon with a 'bookmark' icon
+
+1.1 (01/31/2013):
+ - fix widget layout edit permissions
+
+1.0 (01/30/2013):
+ - initial release
